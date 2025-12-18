@@ -1,0 +1,19 @@
+class Empleado:
+    def calcularSalario(self):
+        raise NotImplementedError("Este método debe ser implementado")
+
+class EmpleadoPorHora(Empleado):
+    def __init__(self, horas, valor_hora):
+        self.horas = horas
+        self.valor_hora = valor_hora
+
+    def calcularSalario(self):
+        return self.horas * self.valor_hora
+
+class EmpleadoFijo(Empleado):
+    def __init__(self, salario):
+        self.salario = salario
+
+    def calcularSalario(self):
+        return self.salario
+
