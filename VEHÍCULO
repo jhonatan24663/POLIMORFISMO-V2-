@@ -1,0 +1,11 @@
+class Vehiculo:
+    def mover(self):
+        raise NotImplementedError("Este método debe ser implementado")
+
+class Coche(Vehiculo):
+    def mover(self):
+        print("El coche se mueve con motor")
+
+class Bicicleta(Vehiculo):
+    def mover(self):
+        print("La bicicleta se mueve pedaleando")
