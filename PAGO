@@ -1,0 +1,15 @@
+# Clase base
+class Pago:
+    def procesarPago(self, monto):
+        raise NotImplementedError("Este método debe ser implementado")
+
+# Pago con tarjeta
+class TarjetaCredito(Pago):
+    def procesarPago(self, monto):
+        print(f"Pago de ${monto} realizado con tarjeta de crédito")
+
+# Pago con PayPal
+class PayPal(Pago):
+    def procesarPago(self, monto):
+        print(f"Pago de ${monto} realizado con PayPal")
+
